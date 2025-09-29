@@ -1,0 +1,251 @@
+body{
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width : 80%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img{
+    width: 250px;
+    position: relative;
+    top: 10px;
+    left: 10x;
+    height: auto;
+}
+
+ul:not([class]){
+    list-style: none;
+}
+
+ol:not([class]){
+    list-style: none;
+}
+
+nav {
+    background-color: #4caf50;
+    overflow: hidden;
+}
+
+#topLinks li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#topLinks{
+    position: absolute;
+    width: 500px;
+    top: 100px;
+    right: 10px;
+}
+
+:root{
+    /* --COLOUR SCHEME -- */
+    --primary-color: #4caf50;
+    --secondary-color: #81c784;
+    --background-light: #e0f7fa;
+    --background-dark: #004d40;
+    --text-color-dark: #212121;
+    --text-color-light: #ffffff;
+}
+
+/*--TYPOGRAPHY --*/
+body, button, input, select, textarea{
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color-dark);
+    line-height: 1.6;
+}
+
+/* tYpography Styles */
+P{
+    margin-bottom: 1em;
+}
+
+/* Link/Interactive Styles */
+a:link{
+    color: #004d;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #00251a;
+}
+
+a:hover{
+    color: #81c784;
+    text-decoration: underline;
+}
+
+button{
+    /*Simple reset for buttons */
+    padding: var(--background-light) var(--background-dark);
+}
+
+.currentPage{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Layout Containers */
+/*Max width for central content on desktop */
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* * Responsive Stylesheet (Mobile-First)
+ * ----------------------------------------------------
+ * This file uses CSS media queries to adjust styling 
+ * for mobile, tablet, and desktop viewports.
+ */
+
+/* --- Global Reset and Base Styles --- */
+:root {
+    --primary-color: #46dae5;
+    --secondary-color: #6ee7b7;
+    --text-color: #1f2937;
+    --background-color: #d7e9ec;
+    --card-background: #ffffff;
+    --font-family: 'Inter', system-ui, sans-serif;
+    --border-radius: 0.5rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* --- 2. Mobile Styles (Default, up to 639px) --- */
+
+.container {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: block; /* Full width on mobile */
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.button:hover {
+    background-color: #3b30a3;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* --- 3. Tablet Styles (min-width: 640px) --- */
+
+@media (min-width: 640px) {
+    
+    .container {
+        max-width: 600px;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .button {
+        display: inline-block; /* Inline/Auto width on tablet/desktop */
+        width: auto;
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Example: Two-column layout for main content */
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Ensure cards still look good in the grid */
+    .grid-layout .card {
+        margin-bottom: 0; 
+    }
+}
+
+/* --- 4. Desktop Styles (min-width: 1024px) --- */
+
+@media (min-width: 1024px) {
+    
+    .container {
+        max-width: 1000px; /* Wider content area for desktop */
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    /* Increase column count for desktop view */
+    .grid-layout {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
