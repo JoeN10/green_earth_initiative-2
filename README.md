@@ -210,6 +210,14 @@ In order for the website to be user friendly on all devices and platforms.
 
 4.  Tech for Good. (2023. How Nonprofits can improve their websites.) Retrieved from https://www.techsoup.org
 
+5. Source: https://dynamic.design.com/asset/logo/ac66af49-6d0b-428f-b0fe-7e9036d762b7/logo-search-grid-2x?logoTemplateVersion=1&v=638663685331330000&text=Green+Earth+Initiative&layout=auto 
+
+6. .SITEMAP -  
+
+https://www.gloomaps.com/vglioAs3Vs  
+
+7. Wireframe - https://www.figma.com/design/HUMd5ETWdu0iWoEcObPtGe/Untitled?node-id=11-66&m=draw  
+
 
 
 
