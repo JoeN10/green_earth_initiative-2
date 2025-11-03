@@ -1,251 +1,464 @@
-body{
-    background-color: #e0f7fa;
-    margin: 0;
-    padding: 0;
+/* Contact Page Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
 }
 
-#wrapper{
-    width : 80%;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
+.contact-details {
+    margin-bottom: 30px;
 }
 
-header {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+.contact-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
 }
 
-header img{
-    width: 250px;
-    position: relative;
-    top: 10px;
-    left: 10x;
-    height: auto;
+.contact-item h3 {
+    color: #2E8B57;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
 }
 
-ul:not([class]){
-    list-style: none;
-}
-
-ol:not([class]){
-    list-style: none;
-}
-
-nav {
-    background-color: #4caf50;
-    overflow: hidden;
-}
-
-#topLinks li{
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#topLinks{
-    position: absolute;
-    width: 500px;
-    top: 100px;
-    right: 10px;
-}
-
-:root{
-    /* --COLOUR SCHEME -- */
-    --primary-color: #4caf50;
-    --secondary-color: #81c784;
-    --background-light: #e0f7fa;
-    --background-dark: #004d40;
-    --text-color-dark: #212121;
-    --text-color-light: #ffffff;
-}
-
-/*--TYPOGRAPHY --*/
-body, button, input, select, textarea{
-    font-family: 'Arial', sans-serif;
-    color: var(--text-color-dark);
-    line-height: 1.6;
-}
-
-/* tYpography Styles */
-P{
-    margin-bottom: 1em;
-}
-
-/* Link/Interactive Styles */
-a:link{
-    color: #004d;
+.contact-item a {
+    color: #333;
     text-decoration: none;
 }
 
-a:visited{
-    color: #00251a;
+.contact-item a:hover {
+    color: #2E8B57;
 }
 
-a:hover{
-    color: #81c784;
-    text-decoration: underline;
+.operational-hours {
+    margin-top: 30px;
 }
 
-button{
-    /*Simple reset for buttons */
-    padding: var(--background-light) var(--background-dark);
+.hours-grid {
+    display: grid;
+    gap: 10px;
 }
 
-.currentPage{
+.day-time {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.day {
     font-weight: bold;
-    text-decoration: underline;
 }
 
-/*Layout Containers */
-/*Max width for central content on desktop */
-.container{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* * Responsive Stylesheet (Mobile-First)
- * ----------------------------------------------------
- * This file uses CSS media queries to adjust styling 
- * for mobile, tablet, and desktop viewports.
- */
-
-/* --- Global Reset and Base Styles --- */
-:root {
-    --primary-color: #46dae5;
-    --secondary-color: #6ee7b7;
-    --text-color: #1f2937;
-    --background-color: #d7e9ec;
-    --card-background: #ffffff;
-    --font-family: 'Inter', system-ui, sans-serif;
-    --border-radius: 0.5rem;
+.form-group {
+    margin-bottom: 20px;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
 }
 
-body {
-    font-family: var(--font-family);
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    min-height: 100vh;
-}
-
-/* --- 2. Mobile Styles (Default, up to 639px) --- */
-
-.container {
+.form-group input,
+.form-group select,
+.form-group textarea {
     width: 100%;
-    padding: 1rem;
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-p {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     font-size: 1rem;
-    margin-bottom: 1rem;
 }
 
-.card {
-    background-color: var(--card-background);
-    border-radius: var(--border-radius);
-    padding: 1.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-    margin-bottom: 1rem;
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2E8B57;
+    box-shadow: 0 0 5px rgba(46, 139, 87, 0.3);
 }
 
-.button {
-    display: block; /* Full width on mobile */
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: var(--border-radius);
-    background-color: var(--primary-color);
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+}
+
+.btn-primary {
+    background-color: #2E8B57;
     color: white;
-    font-weight: 600;
-    text-align: center;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
-.button:hover {
-    background-color: #3b30a3;
+.btn-primary:hover {
+    background-color: #267349;
 }
 
-.button:active {
-    transform: scale(0.98);
+.map-section {
+    margin-top: 50px;
 }
 
-/* --- 3. Tablet Styles (min-width: 640px) --- */
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 
-@media (min-width: 640px) {
-    
-    .container {
-        max-width: 600px;
-        padding: 1.5rem;
+/* Donate Page Styles */
+.donate-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.options-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.option-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.option-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.impact-grid {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.impact-item {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #2E8B57;
+}
+
+.impact-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2E8B57;
+    margin-right: 15px;
+    min-width: 70px;
+}
+
+.impact-description {
+    flex: 1;
+}
+
+.donation-form-section {
+    margin-top: 50px;
+}
+
+.form-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.thank-you-section {
+    margin-top: 40px;
+    text-align: center;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Home Page Styles */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2E8B57;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #2E8B57;
+    padding: 12px 25px;
+    border: 2px solid #2E8B57;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #2E8B57;
+    color: white;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.quick-links {
+    margin-bottom: 60px;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.link-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-link {
+    color: #2E8B57;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.mission-preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 40px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.mission-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.impact-stats {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.stat-item {
+    padding: 20px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2E8B57;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Services Page Styles */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-features {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.service-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 20px;
+}
+
+.service-features li:before {
+    content: "✓";
+    color: #2E8B57;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.service-features li:last-child {
+    border-bottom: none;
+}
+
+.cta-section {
+    background: #2E8B57;
+    color: white;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta-section .btn-primary {
+    background: white;
+    color: #2E8B57;
+}
+
+.cta-section .btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.cta-section .btn-secondary:hover {
+    background: white;
+    color: #2E8B57;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* Footer Enhancements */
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo .logo {
+    max-height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-grid,
+    .donate-grid,
+    .hero-section,
+    .mission-preview {
+        grid-template-columns: 1fr;
     }
+    
+    .hero-buttons,
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .impact-amount {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
 
-    h1 {
+@media (max-width: 480px) {
+    .hero-content h1 {
         font-size: 2rem;
     }
-
-    .card {
-        padding: 2rem;
-    }
-
-    .button {
-        display: inline-block; /* Inline/Auto width on tablet/desktop */
-        width: auto;
-        padding: 0.75rem 1.5rem;
-    }
-
-    /* Example: Two-column layout for main content */
-    .grid-layout {
-        display: grid;
+    
+    .stats-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
     }
     
-    /* Ensure cards still look good in the grid */
-    .grid-layout .card {
-        margin-bottom: 0; 
+    .cta-section {
+        padding: 30px 20px;
     }
 }
-
-/* --- 4. Desktop Styles (min-width: 1024px) --- */
-
-@media (min-width: 1024px) {
-    
-    .container {
-        max-width: 1000px; /* Wider content area for desktop */
-        padding: 2rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    p {
-        font-size: 1.125rem;
-    }
-
-    /* Increase column count for desktop view */
-    .grid-layout {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-}
-

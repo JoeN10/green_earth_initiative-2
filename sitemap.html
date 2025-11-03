@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sitemap - Green Earth Initiative</title>
+    <meta name="description" content="Complete sitemap of Green Earth Initiative website. Find all pages and navigate our environmental conservation organization's content.">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+        .sitemap-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .sitemap-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2E8B57;
+        }
+        
+        .sitemap-header h1 {
+            color: #2E8B57;
+            margin-bottom: 10px;
+        }
+        
+        .sitemap-description {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .sitemap-section {
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .sitemap-section h2 {
+            color: #2E8B57;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .sitemap-section h2 i {
+            margin-right: 10px;
+            font-size: 1.3em;
+        }
+        
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sitemap-list li {
+            margin-bottom: 12px;
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .sitemap-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .sitemap-list a {
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s, transform 0.2s;
+            padding: 5px 0;
+        }
+        
+        .sitemap-list a:hover {
+            color: #2E8B57;
+            transform: translateX(5px);
+        }
+        
+        .sitemap-list a i {
+            margin-right: 10px;
+            color: #2E8B57;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .sitemap-subpages {
+            list-style: none;
+            padding-left: 30px;
+            margin-top: 10px;
+        }
+        
+        .sitemap-subpages li {
+            margin-bottom: 8px;
+            border-bottom: none;
+            padding: 5px 0;
+        }
+        
+        .sitemap-subpages a {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .sitemap-subpages a:hover {
+            color: #2E8B57;
+        }
+        
+        .sitemap-visual {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        
+        .sitemap-visual h3 {
+            color: #2E8B57;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .visual-map {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .home-level {
+            font-weight: bold;
+            background: #2E8B57;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(46, 139, 87, 0.3);
+        }
+        
+        .main-level {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .main-page {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 4px solid #2E8B57;
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .main-page a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .main-page a:hover {
+            color: #2E8B57;
+        }
+        
+        .connection {
+            width: 2px;
+            height: 20px;
+            background: #ddd;
+            margin: 0 auto;
+        }
+        
+        .sitemap-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-sitemap {
+            background: #2E8B57;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        
+        .btn-sitemap:hover {
+            background: #267349;
+            color: white;
+        }
+        
+        .btn-sitemap i {
+            margin-right: 8px;
+        }
+        
+        .btn-outline {
+            background: white;
+            color: #2E8B57;
+            border: 1px solid #2E8B57;
+        }
+        
+        .btn-outline:hover {
+            background: #f5f5f5;
+        }
+        
+        @media (max-width: 768px) {
+            .sitemap-container {
+                padding: 15px;
+            }
+            
+            .sitemap-section {
+                padding: 15px;
+            }
+            
+            .main-level {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .main-page {
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            .sitemap-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-sitemap {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+        }
+        
+        /* Icon styles using UTF-8 characters */
+        .icon-home::before { content: "🏠"; }
+        .icon-about::before { content: "ℹ️"; }
+        .icon-donate::before { content: "💚"; }
+        .icon-services::before { content: "🌱"; }
+        .icon-contact::before { content: "📞"; }
+        .icon-search::before { content: "🔍"; }
+        .icon-download::before { content: "📥"; }
+        .icon-form::before { content: "📝"; }
+        .icon-map::before { content: "🗺️"; }
+        .icon-news::before { content: "📰"; }
+        .icon-event::before { content: "📅"; }
+        .icon-education::before { content: "🎓"; }
+        .icon-volunteer::before { content: "👥"; }
+        .icon-partnership::before { content: "🤝"; }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="_images/Green Earth Initiative_logo.png" alt="Green Earth Initiative Logo" class="logo">
+            </div>
+            <nav class="main-nav">
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li class="active"><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1><em>Green Earth Initiative: Growing a Greener Tomorrow, Today</em></h1>
+        </div>
+         <img src="./_images/Screenshot 2025-09-29 155014.png" alt="sitemap">
+    </header>
+
+    <main class="container main-content">
+        <div class="sitemap-container">
+            <div class="sitemap-header">
+                <h1>Website Sitemap</h1>
+                <p class="sitemap-description">
+                    Explore the complete structure of the Green Earth Initiative website. Find all pages, resources, and navigate our content with ease.
+                </p>
+            </div>
+            
+            <div class="sitemap-section">
+                <h2><i class="icon-home"></i> Main Pages</h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="index.html">
+                            <i class="icon-home"></i>
+                            Home Page
+                        </a>
+                        <ul class="sitemap-subpages">
+                            <li><a href="index.html#mission">Our Mission</a></li>
+                            <li><a href="index.html#impact">Our Impact</a></li>
+                            <li><a href="index.html#quick-links">Quick Links</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="icon-about"></i>
+                            About Us
+                        </a>
+                        <ul class="sitemap-subpages">
+                            <li><a href="about.html#mission-statement">Mission Statement</a></li>
+                            <li><a href="about.html#vision-statement">Vision Statement</a></li>
+                            <li><a href="about.html#what-we-do">What We Do</a></li>
+                            <li><a href="about.html#faq">Frequently Asked Questions</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="services.html">
+                            <i class="icon-services"></i>
+                            Our Services
+                        </a>
+                        <ul class="sitemap-subpages">
+                            <li><a href="services.html#environmental-conservation">Environmental Conservation</a></li>
+                            <li><a href="services.html#waste-management">Waste Management</a></li>
+                            <li><a href="services.html#education">Educational Programs</a></li>
+                            <li><a href="services.html#community-engagement">Community Engagement</a></li>
+                            <li><a href="services.html#partnerships">Community Partnerships</a></li>
+                            <li><a href="services.html#agriculture">Sustainable Agriculture</a></li>
+                            <li><a href="services.html#research">Environmental Research</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="donate.html">
+                            <i class="icon-donate"></i>
+                            Donate
+                        </a>
+                        <ul class="sitemap-subpages">
+                            <li><a href="donate.html#donation-options">Ways to Donate</a></li>
+                            <li><a href="donate.html#impact">Impact of Your Donation</a></li>
+                            <li><a href="donate.html#donation-form">Donation Form</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact_us.html">
+                            <i class="icon-contact"></i>
+                            Contact Us
+                        </a>
+                        <ul class="sitemap-subpages">
+                            <li><a href="contact_us.html#contact-info">Contact Information</a></li>
+                            <li><a href="contact_us.html#operational-hours">Operational Hours</a></li>
+                            <li><a href="contact_us.html#contact-form">Contact Form</a></li>
+                            <li><a href="contact_us.html#location-map">Our Location</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sitemap-section">
+                <h2><i class="icon-download"></i> Resources & Downloads</h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="resources.html">
+                            <i class="icon-education"></i>
+                            Educational Resources
+                        </a>
+                    </li>
+                    <li>
+                        <a href="brochure.pdf">
+                            <i class="icon-download"></i>
+                            Organization Brochure (PDF)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="annual-report.html">
+                            <i class="icon-download"></i>
+                            Annual Report
+                        </a>
+                    </li>
+                    <li>
+                        <a href="environmental-tips.html">
+                            <i class="icon-education"></i>
+                            Environmental Tips
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tree-planting-guide.html">
+                            <i class="icon-download"></i>
+                            Tree Planting Guide
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sitemap-section">
+                <h2><i class="icon-form"></i> Forms & Applications</h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="volunteer-application.html">
+                            <i class="icon-volunteer"></i>
+                            Volunteer Application
+                        </a>
+                    </li>
+                    <li>
+                        <a href="partnership-inquiry.html">
+                            <i class="icon-partnership"></i>
+                            Partnership Inquiry
+                        </a>
+                    </li>
+                    <li>
+                        <a href="event-registration.html">
+                            <i class="icon-event"></i>
+                            Event Registration
+                        </a>
+                    </li>
+                    <li>
+                        <a href="newsletter-signup.html">
+                            <i class="icon-news"></i>
+                            Newsletter Signup
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sitemap-visual">
+                <h3>Website Structure Overview</h3>
+                <div class="visual-map">
+                    <div class="home-level">
+                        <a href="index.html">Home Page</a>
+                    </div>
+                    <div class="connection"></div>
+                    <div class="main-level">
+                        <div class="main-page">
+                            <a href="about.html">About Us</a>
+                        </div>
+                        <div class="main-page">
+                            <a href="services.html">Services</a>
+                        </div>
+                        <div class="main-page">
+                            <a href="donate.html">Donate</a>
+                        </div>
+                        <div class="main-page">
+                            <a href="contact_us.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sitemap-actions">
+                <a href="index.html" class="btn-sitemap">
+                    <i class="icon-home"></i>
+                    Back to Homepage
+                </a>
+                <a href="contact_us.html" class="btn-sitemap btn-outline">
+                    <i class="icon-contact"></i>
+                    Contact Us for Help
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li class="active"><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+            <div class="footer-info">
+                <p>&copy; 2025 Green Earth Initiative. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

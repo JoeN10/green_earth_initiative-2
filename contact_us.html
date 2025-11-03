@@ -18,39 +18,139 @@
                 <li>Contact Us</li>
             </ul>
         </nav>
-        <h1><em>Green Earth Initiative Growing a Greener Tomorrow, today.</em></h1>
+
+        </div>
+        <div class="header-content container">
+            <h1><em>Green Earth Initiative: Growing a Greener Tomorrow, Today</em></h1>
+        </div>
     </header>
 
-    <main>
-        <h1>Contact Us</h1>
-        <p><strong>Physical Address:</strong>1718,Van Der Linde Rd,Bedfordview,Johannesburg,2007</p>
-        <p><strong>Email:</strong>info@greenearthinitiative.org</p>
-        <p><strong>contact Numbe: </strong>067 715 2115</p>
+    <main class="container main-content">
+        <section class="contact-intro">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out to us with any questions, suggestions, or partnership opportunities.</p>
+        </section>
 
-        <h1>Operational Hours</h1>
-        <p><strong>Mondays:</strong> 8:30 am - 5pm</p>
-        <p><strong>Tuesdays:</strong> 8:30 - 5pm</p>
-        <p><strong>Wednesdays:</strong> 8:30 - 5pm</p>
-        <p><strong>Thursdays:</strong> 8:30 - 5pm</p>
-        <p><strong>Fridays:</strong> 8:30 - 5pm</p>
-        <p><strong>Saturdays:</strong> 8:30 - 3pm</p>
+        <div class="contact-grid">
+            <section class="contact-info">
+                <h2>Get In Touch</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <h3>Physical Address</h3>
+                        <p>1718, Van Der Linde Rd, Bedfordview, Johannesburg, 2007</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@greenearthinitiative.org">info@greenearthinitiative.org</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:0677152115">067 715 2115</a></p>
+                    </div>
+                </div>
 
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9327073463232!2d28.123214975082917!3d-26.188798863346022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95116241684c47%3A0x6dfb76b9db9f6941!2sBedford%20Centre!5e1!3m2!1sen!2sza!4v1758887237248!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="operational-hours">
+                    <h2>Operational Hours</h2>
+                    <div class="hours-grid">
+                        <div class="day-time">
+                            <span class="day">Mondays - Thursdays:</span>
+                            <span class="time">8:30 AM - 5:00 PM</span>
+                        </div>
+                        <div class="day-time">
+                            <span class="day">Fridays:</span>
+                            <span class="time">8:30 AM - 5:00 PM</span>
+                        </div>
+                        <div class="day-time">
+                            <span class="day">Saturdays:</span>
+                            <span class="time">8:30 AM - 3:00 PM</span>
+                        </div>
+                        <div class="day-time">
+                            <span class="day">Sundays:</span>
+                            <span class="time">Closed</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="volunteer">Volunteer Information</option>
+                            <option value="donation">Donation Question</option>
+                            <option value="event">Event Information</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9327073463232!2d28.123214975082917!3d-26.188798863346022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95116241684c47%3A0x6dfb76b9db9f6941!2sBedford%20Centre!5e1!3m2!1sen!2sza!4v1758887237248!5m2!1sen!2sza" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Green Earth Initiative Location">
+                </iframe>
+            </div>
+        </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="get_involved.html">Get involved</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li>Contact Us</li>
 
-            </ul>
-        </nav>
-
+    <footer class="main-footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="active"><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="footer-info">
+                <p>&copy; 2025 Green Earth Initiative. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

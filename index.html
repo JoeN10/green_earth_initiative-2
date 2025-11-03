@@ -2,41 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Green Earth Initiative | HomePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth Initiative - Home</title>
+    <meta name="description" content="Green Earth Initiative - A nonprofit organization dedicated to environmental preservation, sustainability, and community education in Johannesburg, South Africa.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <img src="_images/Green Earth Initiative_logo.png" alt="Green Earth Initiative Logo">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="_images/Green Earth Initiative_logo.png" alt="Green Earth Initiative Logo" class="logo">
+            </div>
+            <nav class="main-nav">
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1><em>Green Earth Initiative: Growing a Greener Tomorrow, Today</em></h1>
+        </div>
     </header>
-    
-    <main>
-        <h1>Home Page</h1>
-        <p>Green Earth a community-based nonprofit organization company situated in Johannesburg, South Africa.</p>
+
+    <main class="container main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Green Earth Initiative</h1>
+                <p>A community-based nonprofit organization situated in Johannesburg, South Africa, dedicated to environmental preservation and sustainability since 2015.</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn-primary">Learn More</a>
+                    <a href="donate.html" class="btn-secondary">Support Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="_images/Community working together.jpeg" alt="Community working together for a greener environment" loading="lazy">
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <h2>Get Involved</h2>
+            <div class="links-grid">
+                <div class="link-card">
+                    <h3>Learn About Us</h3>
+                    <p>Discover our mission, vision, and the work we do to create sustainable communities.</p>
+                    <a href="about.html" class="btn-link">Our Story →</a>
+                </div>
+                <div class="link-card">
+                    <h3>Support Our Cause</h3>
+                    <p>Your donation helps fund environmental projects and educational programs.</p>
+                    <a href="donate.html" class="btn-link">Donate Now →</a>
+                </div>
+                <div class="link-card">
+                    <h3>Our Services</h3>
+                    <p>Explore the environmental services and programs we offer to communities.</p>
+                    <a href="services.html" class="btn-link">View Services →</a>
+                </div>
+                <div class="link-card">
+                    <h3>Get In Touch</h3>
+                    <p>Contact us for partnerships, volunteer opportunities, or general inquiries.</p>
+                    <a href="contact_us.html" class="btn-link">Contact Us →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-preview">
+            <div class="mission-content">
+                <h2>Our Mission</h2>
+                <p>We are dedicated to fostering both people and the environment through community outreach initiatives, environmental education, and sustainable practices. We collaborate closely with schools, families, and community groups on initiatives like tree planting, waste reduction, and educational programs to bring about long-term change.</p>
+                <a href="about.html" class="btn-primary">Read Full Mission</a>
+            </div>
+            <div class="mission-image">
+                <img src="_images/Community Environment Initiative.jpeg" alt="Community environmental initiative" loading="lazy">
+            </div>
+        </section>
+
+        <section class="impact-stats">
+            <h2>Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Trees Planted</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Communities Reached</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5,000+</div>
+                    <div class="stat-label">People Educated</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Clean-up Events</div>
+                </div>
+            </div>
+        </section>
     </main>
-    
-    <footer>
-        <img src="_images/images.jpeg" alt="Green Earth Initiative Logo">
-        
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </nav>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="_images/Green Earth Initiative_logo.png" alt="Green Earth Initiative Logo" class="logo">
+                    <p>Growing a Greener Tomorrow, Today</p>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 Green Earth Initiative. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

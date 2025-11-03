@@ -7,6 +7,7 @@ Green Earth Initiative
 Name: Nhlanhla Joseph Sithole 
 ST10479942
 
+
 # Project Overview 
 •	Brief History: The Green Earth Initiative, a nonprofit organization devoted to environmental preservation and sustainability, was established in 2015. The group mostly works in cities and villages, concentrating on waste reduction programs, tree-planting projects, and educational initiatives that encourage sustainability lifestyles. It can collaborate with the government organizations, local schools, and enterprises over the years to promote environmental awareness and action.
 
