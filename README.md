@@ -133,7 +133,7 @@ week	Task	Deliverable
 
 <img src="./_images/Screenshot 2025-09-29 152142.png" alt="screenshot">
 
-# Change Log
+# Change Log (Summary of Changes Made:)
 
 From the feedback given here are some of the changes made.
 
@@ -148,6 +148,47 @@ From the feedback given here are some of the changes made.
 --Google maps and a new google form have beed added to the website giving the location and form for donations. 
 
 -- a screenshot of the website for mobile phone and desktop have been added to the ReadMe.md file. 
+
+Below are the changes made for POE Part 3 regarding feedback from part 2:
+
+-- Fixed HTML structure with proper container elements and semantic markup.
+
+-- Implemented responsive navigation that switches between inline for desktop and block for mobile.
+
+-- Added proper spacing with container class so content does not touch the edges.
+
+-- Improved visual design with cards, grids, and hover effects
+
+-- Added interactive elements, like an accordion for FAQs.
+
+-- Improved SEO with meta descriptions, proper heading structure, and semantic HTML
+
+-- Added JavaScript functionality for a mobile menu, accordion, and form validation.
+
+-- Created additional SEO files robots.txt and sitemap.xml
+
+These changes address all the feedback from Part 2 while implementing the required functionality for Part 3, including JavaScript enhancements, SEO optimization, and improved responsive design.
+
+# Key Features of Sitemap:
+
+-- Comprehensive Structure: Shows main and subpages, all in clear hierarchical manner.
+
+-- Visual Website Map: A visual representation of the site structure
+
+-- Organized Sections - Groups pages by type (Main Pages, Resources, Forms)
+
+-- Responsive Design - Works perfectly on all device sizes
+
+-- Consistent Styling - Matches Green Earth Initiative branding
+
+-- Easy to Navigate - Clear links to all important pages
+
+-- SEO Friendly: Helps search engines understand your site structure.
+
+-- Easy to use: Simple for visitors to find what they are looking for
+
+
+
 
 # Test and Iterate
 
