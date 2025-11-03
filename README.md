@@ -133,6 +133,13 @@ week	Task	Deliverable
 
 <img src="./_images/Screenshot 2025-09-29 152142.png" alt="screenshot">
 
+# New Added scrennshots of updated pages 
+<img src= "./_images/Home Page.png" alt="Home Page">
+<img src="./_images/Home Page 2.png" alt=" Home page 2">
+<img src="./_images/Donate Page.png" alt= "Donate Page">
+<img src="./_images/Contact Us page.png" alt= "Contact Us Page">
+
+
 # Change Log (Summary of Changes Made:)
 
 From the feedback given here are some of the changes made.
